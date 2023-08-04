@@ -94,7 +94,7 @@ char* duplicateString(const char* str) {
     strcpy(newStr, str);
     return newStr;
 }
-int readAllLinesFromFile(const char* filename, char* allLines[]) {
+int readDictionary(const char* filename, char** allLines) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
         perror("Error opening the file");
@@ -144,7 +144,7 @@ int main(void)
 
     //read the number of the words in the dictionary
 //    int numWords = readDictionary("dictionary.txt", inWords);
-    int numWords = readAllLinesFromFile("C:\\Users\\Matthew Eisenberg\\Documents\\DREnhancedMod\\Projects\\DRMod\\Lab-Assignment10\\dictionary.txt", inWords);
+    int numWords = readDictionary("C:\\Users\\Matthew Eisenberg\\Documents\\DREnhancedMod\\Projects\\DRMod\\Lab-Assignment10\\dictionary.txt", inWords);
     for (int i=0;i<numWords;++i)
     {
         printf("%s\n",inWords[i]);

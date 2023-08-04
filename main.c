@@ -144,7 +144,8 @@ int main(void)
 
     //read the number of the words in the dictionary
 //    int numWords = readDictionary("dictionary.txt", inWords);
-    int numWords = readDictionary("C:\\Users\\Matthew Eisenberg\\Documents\\DREnhancedMod\\Projects\\DRMod\\Lab-Assignment10\\dictionary.txt", inWords);
+//    int numWords = readDictionary("C:\\Users\\Matthew Eisenberg\\Documents\\DREnhancedMod\\Projects\\DRMod\\Lab-Assignment10\\dictionary.txt", inWords);
+    int numWords = readDictionary("C:\\Users\\matt1\\CLionProjects\\Lab-Assignment10\\dictionary.txt", inWords);
     for (int i=0;i<numWords;++i)
     {
         printf("%s\n",inWords[i]);
